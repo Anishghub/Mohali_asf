@@ -86,7 +86,7 @@ nbformat==5.10.4
 nest-asyncio==1.6.0
 notebook==7.2.0
 notebook_shim==0.2.4
-numpy==1.26.2
+numpy==1.23.5
 oauthlib==3.2.2
 opencv-python==4.9.0.80
 openpyxl==3.1.4
@@ -94,7 +94,7 @@ opt_einsum==3.4.0
 optree==0.16.0
 overrides==7.7.0
 packaging==24.0
-pandas==2.2.2
+pandas==1.5.2
 pandocfilters==1.5.1
 parso==0.8.4
 pillow==10.3.0
