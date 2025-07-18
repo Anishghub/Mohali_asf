@@ -1,0 +1,68 @@
+<!-- templates/dashboard.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Attendance Dashboard</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 80%;
+      margin: auto;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+    }
+    th {
+      background-color: #f0f0f0;
+    }
+    h2 {
+      text-align: center;
+    }
+    button {
+      padding: 5px 10px;
+      background-color: #d9534f;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h2>Attendance Records</h2>
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Date</th>
+      <th>Time</th>
+      <th>IN ? OUT </th>
+      <!-- <th>Status</th>
+      <th>Action</th> -->
+    </tr>
+    {% for row in records %}
+    <tr>
+      <td>{{ row[0] }}</td> <!-- Name -->
+      <td>{{ row[1] }}</td> <!-- Date -->
+      <td>{{ row[2] }}</td> <!-- Time -->
+      <td>{{ row[3] }}</td> <!-- Status -->
+      <!-- <td>{{ row[4] }}</td> Status -->
+      <!-- <td>
+        <button onclick="deleteEntry(row[0])">Delete</button> Pass ID
+      </td> -->
+    </tr>
+    {% endfor %}
+  </table>
+
+  <script>
+    function deleteEntry(id) {
+      fetch(`/delete/${id}`, {
+        method: 'POST'
+      }).then(() => {
+        window.location.reload();
+      });
+    }
+  </script>
+</body>
+</html>
+

@@ -1,0 +1,369 @@
+ <!-- <!DOCTYPE html>
+<html>
+<head>
+  <title>HP AVIATION Attendance</title>
+</head>
+<body>
+  <h2>Face Attendance System</h2>
+  <video id="video" autoplay playsinline width="500"></video><br>
+  <button onclick="capture()">Mark Attendance</button>
+  <canvas id="canvas" style="display:none;"></canvas>
+  <p id="msg"></p>
+  <script src="/static/script.js"></script>
+</body>
+</html>  -->
+
+<!-- IN & OUT  -->
+ <!-- <!DOCTYPE html>
+<html>
+<head>
+  <title>Face Attendance System</title>
+</head>
+<body>
+  <h2 style="border-radius: 20%; color: blue; padding: 2px red;" > HP AVIATION ATTENDANCE </h2>
+  <video id="video" autoplay playsinline width="450" style="border: 2px rgb(49, 43, 136);" ></video><br><br>
+
+  <button onclick="capture('IN')" style="background-color: rgb(58, 145, 62) ; align-items: start; " >Mark IN</button>
+   <br/>
+  <button onclick="capture('OUT')" style="background-color: rgb(207, 36, 36); align-items: end;">Mark OUT</button>
+
+  <canvas id="canvas" style="display:none;"></canvas>
+  <p id="msg"></p>
+
+  <script src="/static/script.js"></script>
+</body>
+</html> -->
+
+ <!-- IN & OUT  -->
+
+<!-- DASHBOARD....START  -->
+
+<!-- templates/index.html -->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <title>HP AVIATION ATTENDANCE</title>
+</head>
+<body>
+  <h2 style="border-radius: 20%; color: blue; padding: 2px red;">Mohali ASF IN/OUT Attendance</h2>
+  <video id="video" autoplay playsinline width="450" style="border: 2px solid rgb(49, 43, 136);"></video><br><br>
+
+  <button onclick="capture('IN')" style="background-color: rgb(58, 145, 62);">ON DUTY</button>
+  <br/>
+  <button onclick="capture('OUT')" style="background-color: rgb(207, 36, 36);">OFF DUTY</button>
+
+  <canvas id="canvas" style="display:none;"></canvas>
+  <p id="msg"></p>
+
+  <br><br>
+  <a href="/attendance" style="text-align: center;">Access Attendance Dashboard</a>
+
+  <script src="/static/script.js"></script>
+</body>
+</html> -->
+
+
+<!-- DASHBOARD....END -->
+
+<!-- look try  -->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <title>HP AVIATION ATTENDANCE</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #0e0829;
+      color: white;
+      padding: 10px 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .header-title {
+      flex: 1;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      color: white;
+      align-items: center;
+    }
+
+    .header-title span {
+      display: inline-block;
+    }
+
+    #clock-header {
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    #video {
+      border: 2px solid #312b88;
+      width: 450px;
+      max-width: 90%;
+      border-radius: 10px;
+    }
+
+    .button-row {
+      display: flex;
+      justify-content: center;
+      margin-top: 15px;
+      gap: 10px;
+    }
+
+    .button-row button {
+      width: 50%;
+      padding: 10px;
+      font-size: 16px;
+      border: none;
+      color: white;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .button-row .in {
+      background-color: rgb(58, 145, 62);
+    }
+
+    .button-row .out {
+      background-color: rgb(207, 36, 36);
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 20px;
+      text-decoration: none;
+      color: #003366;
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: #003366;
+      color: white;
+      padding: 10px;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+
+    #clock-footer {
+      font-size: 14px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    
+    <-- Center title -->
+    <!-- <div class="header-title">
+      HPCL Mohali ASF</span>
+    </div> -->
+
+    <!-- Clock on right -->
+    <!-- <div id="clock-header"></div>
+  </header>
+
+  <main>
+    <video id="video" autoplay playsinline></video>
+
+    <div class="button-row">
+      <button onclick="capture('IN')" class="in">ON DUTY</button>
+      <button onclick="capture('OUT')" class="out">OFF DUTY</button>
+    </div>
+
+    <canvas id="canvas" style="display:none;"></canvas>
+    <p id="msg"></p>
+
+    <a href="/attendance">📋 Access Attendance Dashboard</a>
+  </main>
+
+  <script src="/static/script.js"></script>
+
+  <script>
+    function updateClock() {
+      const now = new Date();
+      const options = { 
+        hour: '2-digit', 
+        minute: '2-digit', 
+        second: '2-digit', 
+        hour12: true 
+      };
+      const timeString = now.toLocaleTimeString('en-IN', options);
+      document.getElementById("clock-header").textContent = timeString;
+      document.getElementById("clock-footer").textContent = `Current Time: ${timeString}`;
+    }
+
+    setInterval(updateClock, 1000);
+    updateClock(); // Initial call
+  </script>
+
+</body>
+</html> -->
+
+<!-- 14-07-2025 all clear code  -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HP AVIATION ATTENDANCE</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #0e0829;
+      color: white;
+      padding: 10px 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .header-title {
+      flex: 1;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      color: white;
+      align-items: center;
+    }
+
+    .header-title span {
+      display: inline-block;
+    }
+
+    #clock-header {
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    #video {
+      border: 2px solid #312b88;
+      width: 450px;
+      max-width: 90%;
+      border-radius: 10px;
+    }
+
+    .button-row {
+      display: flex;
+      justify-content: center;
+      margin-top: 15px;
+      gap: 10px;
+    }
+
+    .button-row button {
+      width: 50%;
+      padding: 10px;
+      font-size: 16px;
+      border: none;
+      color: white;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .button-row .in {
+      background-color: rgb(58, 145, 62);
+    }
+
+    .button-row .out {
+      background-color: rgb(207, 36, 36);
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 20px;
+      text-decoration: none;
+      color: #003366;
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: #003366;
+      color: white;
+      padding: 10px;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+
+    #clock-footer {
+      font-size: 14px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    
+    <!-- Center title -->
+    <div class="header-title">
+      HPCL Mohali ASF</span>
+    </div>
+
+    <!-- Clock on right -->
+    <div id="clock-header"></div>
+  </header>
+
+  <main>
+    <video id="video" autoplay playsinline></video>
+
+    <div class="button-row">
+      <button onclick="capture('IN')" class="in">ON DUTY</button>
+      <button onclick="capture('OUT')" class="out">OFF DUTY</button>
+    </div>
+
+    <canvas id="canvas" style="display:none;"></canvas>
+    <p id="msg"></p>
+
+    <a href="/attendance">📋 Access Attendance Dashboard</a>
+  </main>
+
+  <script src="/static/script.js"></script>
+
+  <script>
+    function updateClock() {
+      const now = new Date();
+      const options = { 
+        hour: '2-digit', 
+        minute: '2-digit', 
+        second: '2-digit', 
+        hour12: true 
+      };
+      const timeString = now.toLocaleTimeString('en-IN', options);
+      document.getElementById("clock-header").textContent = timeString;
+      document.getElementById("clock-footer").textContent = `Current Time: ${timeString}`;
+    }
+
+    setInterval(updateClock, 1000);
+    updateClock(); // Initial call
+  </script>
+
+</body>
+</html>
